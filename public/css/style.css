@@ -1,0 +1,250 @@
+*{
+    font-family: 'Poppins';
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+  }
+
+  header {
+    background-color: #2A8C82;
+    border-bottom: 1px solid #cccccc;
+  }
+
+.navbar-brand{
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #fff;
+  }
+  .row {
+    margin: 0;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+.form-group{
+    margin-top: 20px;
+
+  }
+
+  .btn-pesquisa{
+    color: #fff;
+    margin-left: 8px;
+  border-radius: 5px;
+    background-color: #2A8C82;
+    border: 2px solid #2A8C82;
+  }
+
+  .btn-primary {
+    margin-top: 20px;
+    background-color: #2A8C82;
+    border: 2px solid #2A8C82;
+  }
+
+  .btn-primary:hover {
+    background-color: #447974;
+    border-color: #447974;
+  }
+
+  .msg {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* navbar */
+  #navbar img {
+    width: 40px;
+  }
+
+  #navbar {
+    justify-content: space-between;
+    background-color: #2A8C82;
+    padding: 5px 0;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    font-weight:500;
+    color: #ffffff;
+  }
+
+  #navbar a:hover {
+    color: #91F2E9;
+  }
+
+  /* Search Container */
+.pesquisa{
+    display: flex;
+    flex-direction: row;
+}
+  #search-container {
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+  }
+
+  #search-container h1 {
+    color: #1b453d;
+    margin-bottom: 30px;
+    font-weight: 900;
+  }
+
+  #search-container form {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* Events list */
+ #events-container {
+  padding: 50px;
+}
+
+#events-container h2 {
+  margin-bottom: 10px;
+}
+
+#events-container .subtitle {
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+#cards-container {
+  display: flex;
+}
+
+#events-container .card {
+  flex: 1 1 24%;
+  max-width: 25%;
+  border-radius: 10px;
+  padding: 0;
+  margin: .5%;
+}
+
+#events-container img {
+  max-height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+  .card .card-date {
+    font-size: 12px;
+    color: #191c1a;
+  }
+
+  .card .card-title {
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .card-participants {
+    font-size: 14px;
+    color: #757575;
+  }
+  .card-descricao {
+    font-size: 14px;
+    color: #323232;
+  }
+
+  /* Event create page */
+#event-create-container {
+    padding: 30px
+  }
+
+  #event-create-container label {
+    font-weight: bold;
+  }
+
+  #event-create-container input,
+  #event-create-container select,
+  #event-create-container textarea {
+    font-size: 14px;
+  }
+
+ /* Event page */
+
+ #image-container{
+    margin-top: 30px;
+ }
+
+ #info-container{
+    margin-top: 30px;
+ }
+
+ #image-container img{
+border-radius: 10px;
+ }
+
+#info-container h1 {
+    font-size: 36px;
+    font-weight: 900;
+
+  }
+
+  #info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+  }
+
+  #info-container h3,
+  #description-container h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  #info-container ion-icon {
+    font-size: 25px;
+    color: #0f7b83;
+    margin-right: 5px;
+ }
+
+  #info-container #event-submit {
+    margin: 20px 0;
+  }
+
+  #items-list {
+    font-size: 18px;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  #items-list li {
+    display: flex;
+  }
+
+  /* footer */
+  footer {
+    text-align: center;
+    background-color: #353E48;
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  /* footer */
+  footer {
+    font-size: 15px;
+    text-align: center;
+    background-color: #2f7367;
+    color: #FFF;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer p {
+    margin-bottom: 0;
+  }
