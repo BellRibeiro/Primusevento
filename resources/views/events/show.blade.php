@@ -11,7 +11,7 @@
         <h1>{{ $event->titulo }}</h1>
         <p class="event-city"><ion-icon name="location-outline"></ion-icon> {{ $event->cidade}}</p>
         <p class="events-participants"><ion-icon name="people-outline"></ion-icon> X Participantes</p>
-        <p class="event-owner"><ion-icon name="star-outline"></ion-icon> Dono do Evento</p>
+        <p class="event-owner"><ion-icon name="star-outline"></ion-icon>  {{$event->user->name}}</p>
         <h3>O evento conta com:</h3>
         <ul id="items-list">
         @foreach($event->items as $item)

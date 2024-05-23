@@ -40,7 +40,7 @@ body {
   }
 
   .btn-primary {
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #2A8C82;
     border: 2px solid #2A8C82;
   }
@@ -196,12 +196,18 @@ border-radius: 10px;
     display: flex;
   }
 
-  #info-container h3,
+  #info-container h3{
+    font-size: 20px;
+    margin-top: 8px;
+    font-weight: bold;
+
+  }
   #description-container h3 {
     font-size: 20px;
-    margin-top: 15px;
     font-weight: bold;
+
   }
+
 
   #info-container ion-icon {
     font-size: 25px;
@@ -222,6 +228,28 @@ border-radius: 10px;
   #items-list li {
     display: flex;
   }
+
+  /* Dashboard */
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .dashboard-events-container th {
+    width: 25%;
+  }
+
+  .dashboard-events-container form {
+    display: inline-block;
+  }
+  
+/* Edit page */
+
+.img-preview {
+    width: 100px;
+    margin-top: 20px;
+  }
+
 
   /* footer */
   footer {
