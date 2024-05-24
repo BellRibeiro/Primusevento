@@ -19,8 +19,16 @@
         @endforeach
         </ul>
 
-        <a href="#" class="btn btn-primary" id="event-submit">Confirmar Presença</a>
-      </div>
+        <form action="/events/join/{{ $event->id }}" method="POST">
+            @csrf
+            <a href="/events/join/{{ $event->id }}"
+              class="btn btn-primary"
+              id="event-submit"
+              onclick="event.preventDefault();
+              this.closest('form').submit();">
+              Confirmar Presença
+            </a>
+          </form>
 
       <div class="col-md-12" id="description-container">
         <h3>Sobre o evento:</h3>

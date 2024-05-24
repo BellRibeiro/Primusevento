@@ -9,6 +9,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Event;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class User extends Authenticatable
 {
@@ -61,7 +63,15 @@ class User extends Authenticatable
 
     public function events(){
         return $this->hasMany('App\Models\Event');
-    }
 
-   //  hasMan- indica que um usuário pode ter muitos eventos.
+    }
+   // hasMany - usado quando um modelo possui muitos registros relacionados.
+   //indica que um usuário pode participar muitos eventos.
+
+   public function eventsAsParticipant(): BelongsToMany
+   {
+       return $this->belongsToMany(Event::class, 'event_user', 'user_id', 'event_id');
+   }
 }
+
+

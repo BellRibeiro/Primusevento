@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Event;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class EventController extends Controller
 {
@@ -104,4 +106,20 @@ return view('welcome',['events' => $events, 'search' => $search]);
     Event::findOrFail($request->id)->update($request->all());
     return redirect('/dashboard')->with('msg', ' Evento editado com sucesso!');
    }
+
+
+   public function joinEvents($id) {
+
+
+
+    $user = Auth::user();
+
+    $user->eventsAsParticipant()->attach($id);
+
+    $event = Event::findOrFail($id);
+
+    return redirect('/user/events')->with('msg', 'Sua presença está confirmada no evento ' . $event->titulo);
 }
+}
+
+

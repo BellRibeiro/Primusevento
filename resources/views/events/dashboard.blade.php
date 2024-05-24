@@ -40,6 +40,10 @@
     @else
 <p>Você não possui eventos. <a href="/events/create">Crie seu evento.</a></p>
     @endif
+
+
+        <p><a href="/user/events">Eventos que você está participando</a></p>
+
 </div>
 
 

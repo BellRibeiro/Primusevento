@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\UserController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create'])->middleware('auth') ;
@@ -22,3 +23,8 @@ Route::delete('/events/{id}',[EventController::class,'destroy'])->middleware('au
 Route::get('/events/edit/{id}',[EventController::class,'edit'])->middleware('auth') ;
 Route::put('/events/update/{id}',[EventController::class,'update'])->middleware('auth') ;
 Route::get('/dashboard',[EventController::class,'dashboard'])->middleware('auth') ;
+Route::post('/events/join/{id}',[EventController::class,'joinEvents'])->middleware('auth');
+
+
+// rota de usuario
+Route::get('/user/events',[UserController::class,'showEvents'])->middleware('auth');
